@@ -13,15 +13,22 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc && (tsc -w --preserveWatchOutput & nodemon)",
     "start": "probot run ./lib/index.js",
-    "test": "jest"
+    "test": "jest",
+    "dev": "npm run build:watch"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
+    "handlebars": "^4.7.6",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
     "probot": "^11.0.1"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.19",
+    "@types/node-fetch": "^2.5.8",
     "jest": "^26.6.3",
     "nock": "^13.0.5",
     "smee-client": "^1.2.2",

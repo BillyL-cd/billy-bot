@@ -1,0 +1,5 @@
+{
+    "configFileName": ".BillyBot",
+    "botCommand": "@billy-bot",
+    "validGithubRoles": ["admin", "write"]
+  }
